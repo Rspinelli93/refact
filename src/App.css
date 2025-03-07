@@ -6,7 +6,9 @@
 }
 
 .envoltura {
-  display: inline;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 3px solid white;
 }
 
 .envoltura > div {
@@ -47,4 +49,50 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  border: solid 5px white;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: none;
+  width: 70px;
+  margin-right: 30%;
+}
+
+.buttons button {
+  width: 70px;
+}
+#display {
+  width: 140px;
+  height: 70px;
+}
+
+footer {
+  color: white;
+  margin-top: 80px;
+}
+header {
+  color: white;
+  margin-bottom: 80px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
